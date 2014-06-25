@@ -16,7 +16,7 @@ class MediaBehavior extends ModelBehavior{
 			'className'  => 'Media.Media',
 			'foreignKey' => 'ref_id',
 			'order'		 => 'Media.position ASC',
-			'conditions' => 'ref = "'.$model->name.'"',
+			'conditions' => 'ref = \''.$model->name.'\'',
 			'dependent'  => true
 		);
 		if($model->hasField('media_id')){
